@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2026 at 03:32 PM
+-- Generation Time: May 23, 2026 at 01:17 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -82,7 +82,23 @@ INSERT INTO `activity_log` (`id`, `official_id`, `action`, `file_id`, `created_a
 (41, NULL, 'Status set to Approved', 8, '2026-04-29 14:54:12'),
 (42, NULL, 'Status set to Rejected', 8, '2026-04-29 14:54:19'),
 (43, NULL, 'Uploaded file', 11, '2026-04-29 16:03:23'),
-(44, NULL, 'Status set to Rejected', 10, '2026-04-30 02:28:52');
+(44, NULL, 'Status set to Rejected', 10, '2026-04-30 02:28:52'),
+(45, NULL, 'File deleted: Exer2MagadanJhonkien.docx', 11, '2026-05-03 14:38:32'),
+(46, NULL, 'Uploaded file', 12, '2026-05-03 14:39:34'),
+(47, NULL, 'Status set to Approved', 12, '2026-05-03 14:40:23'),
+(48, NULL, 'File content updated', 12, '2026-05-04 02:57:17'),
+(49, NULL, 'File content updated', 12, '2026-05-04 02:57:23'),
+(50, NULL, 'File content updated', 12, '2026-05-04 03:00:49'),
+(51, NULL, 'File content updated', 12, '2026-05-04 03:00:54'),
+(52, NULL, 'Uploaded file', 13, '2026-05-04 15:12:03'),
+(53, NULL, 'Uploaded file', 14, '2026-05-23 05:20:01'),
+(54, NULL, 'File deleted: joBLINKScHEMA.png', 14, '2026-05-23 05:22:50'),
+(55, NULL, 'Uploaded file', 15, '2026-05-23 05:27:19'),
+(56, NULL, 'Uploaded file', 16, '2026-05-23 05:30:15'),
+(57, NULL, 'File deleted: BSinfotech3BMagadanAssignment7.pdf', 16, '2026-05-23 05:30:54'),
+(58, NULL, 'File deleted: joBLINKScHEMA.jpeg', 15, '2026-05-23 05:30:58'),
+(59, NULL, 'File deleted: BSinfotech3BMagadanAssignment7.pdf', 13, '2026-05-23 05:31:02'),
+(60, NULL, 'Uploaded file', 17, '2026-05-23 05:52:21');
 
 -- --------------------------------------------------------
 
@@ -154,10 +170,16 @@ INSERT INTO `files` (`id`, `tracking_code`, `filename`, `filepath`, `size`, `upl
 (5, 'DOC-FOR-20260424-8117', 'Screenshot 2026-03-23 214638.png', 'uploads/1777035525_0_Screenshot 2026-03-23 214638.png', 403403, '19', '2026-04-24 12:58:45', 'Approved', 'Documents', NULL, NULL, 'Forms & Templates', '3', 3, '', '2026-04-24', 1, 'ok', '2026-04-28 12:11:35'),
 (6, 'RPT-MIN-20260424-4245', 'Photo.jpg', 'uploads/1777036726_0_WIN_20260323_16_26_36_Pro.jpg', 179372, '19', '2026-04-24 13:18:46', 'Rejected', '', NULL, NULL, 'Minutes Of Meetings (MOM)', '4', 4, 'Photo', '2026-04-24', 0, '', '2026-04-29 22:40:42'),
 (7, 'PRJ-PRO-20260428-8285', 'fallout.pdf', 'uploads/1777383501_0_ScreenShot42.pdf', 132252, '19', '2026-04-28 13:38:21', 'Approved', '', NULL, NULL, 'Project Proposals', '5', 5, 'fallout', '2026-04-28', 0, '', NULL),
-(8, 'RPT-ACT-20260428-4452', 'skpayatas.sql', 'uploads/1777385927_0_skpayatas.sql', 11023, '19', '2026-04-28 14:18:47', 'Rejected', '0', NULL, NULL, 'Activity Reports', '6', 6, 'Findings', '2026-04-28', 1, '', NULL),
-(9, 'DOC-ORD-20260429-5844', 'TB Remind.apk', 'uploads/1777467381_0_TB Remind.apk', 19457773, '20', '2026-04-29 12:56:21', 'Pending', '0', NULL, NULL, 'Ordinances', '7', 7, '', '2026-04-29', 1, NULL, '2026-04-29 20:57:26'),
-(10, 'RPT-ACC-20260429-6112', 'dragon-ball-3840x2160-15856.jpg', 'uploads/1777467663_0_dragon-ball-3840x2160-15856.jpg', 1444633, '20', '2026-04-29 13:01:03', 'Rejected', '0', NULL, NULL, 'Accomplishment Reports', '8', 8, '', '2026-04-29', 1, 'pangit', NULL),
-(11, 'DOC-LET-20260429-0795', 'Exer2MagadanJhonkien.docx', 'uploads/1777478603_0_Exer2MagadanJhonkien.docx', 285482, '19', '2026-04-29 16:03:23', 'Pending', '0', NULL, NULL, 'Letters & Communications', '9', 9, '', '2026-04-29', 1, NULL, NULL);
+(8, 'RPT-ACT-20260428-4452', 'skpayatas.sql', 'uploads/1777385927_0_skpayatas.sql', 11023, '19', '2026-04-28 14:18:47', 'Rejected', 'Reports', NULL, NULL, 'Activity Reports', '6', 6, 'Findings', '2026-04-28', 1, '', NULL),
+(9, 'DOC-ORD-20260429-5844', 'TB Remind.apk', 'uploads/1777467381_0_TB Remind.apk', 19457773, '20', '2026-04-29 12:56:21', 'Pending', 'Documents', NULL, NULL, 'Ordinances', '7', 7, '', '2026-04-29', 1, NULL, '2026-04-29 20:57:26'),
+(10, 'RPT-ACC-20260429-6112', 'dragon-ball-3840x2160-15856.jpg', 'uploads/1777467663_0_dragon-ball-3840x2160-15856.jpg', 1444633, '20', '2026-04-29 13:01:03', 'Rejected', 'Reports', NULL, NULL, 'Accomplishment Reports', '8', 8, '', '2026-04-29', 1, 'pangit', NULL),
+(11, 'DOC-LET-20260429-0795', 'Exer2MagadanJhonkien.docx', 'uploads/1777478603_0_Exer2MagadanJhonkien.docx', 285482, '19', '2026-04-29 16:03:23', 'Pending', 'Documents', NULL, NULL, 'Letters & Communications', '9', 9, '', '2026-04-29', 1, NULL, '2026-05-03 22:38:32'),
+(12, 'DOC-ORD-20260503-6210', 'goku-and-vegeta-qi.jpg', 'uploads/1777863654_787_goku-and-vegeta-qi.jpg', 3711736, '19', '2026-05-04 03:00:54', 'Approved', 'Documents', NULL, NULL, 'Ordinances', '10', 10, '', '2026-05-03', 1, 'frff', NULL),
+(13, 'RPT-MIN-20260504-6958', 'BSinfotech3BMagadanAssignment7.pdf', 'uploads/1777907523_0_BSinfotech3BMagadanAssignment7.pdf', 228592, '19', '2026-05-04 15:12:03', 'Pending', 'Reports', NULL, NULL, 'Minutes Of Meetings (MOM)', '11', 11, '', '2026-05-04', 1, NULL, '2026-05-23 13:31:02'),
+(14, 'DOC-RES-20260523-7431', 'joBLINKScHEMA.png', 'uploads/1779513601_0_joBLINKScHEMA.png', 126016, '19', '2026-05-23 05:20:01', 'Pending', 'Documents', NULL, NULL, 'Resolutions', '12', 12, '', '2026-05-23', 1, NULL, '2026-05-23 13:22:50'),
+(15, 'DOC-RES-20260523-9772', 'joBLINKScHEMA.jpeg', 'uploads/1779514039_0_joBLINKScHEMA.jpeg', 269055, '19', '2026-05-23 05:27:19', 'Pending', 'Documents', NULL, NULL, 'Resolutions', '13', 13, '', '2026-05-23', 0, NULL, '2026-05-23 13:30:58'),
+(16, 'RPT-ATT-20260523-7910', 'BSinfotech3BMagadanAssignment7.pdf', 'uploads/1779514215_0_BSinfotech3BMagadanAssignment7.pdf', 228592, '19', '2026-05-23 05:30:15', 'Pending', 'Reports', NULL, NULL, 'Attendance Reports', '14', 14, '', '2026-05-23', 0, NULL, '2026-05-23 13:30:54'),
+(17, 'PRJ-PRO-20260523-6956', 'Screenshot 2026-05-11 204050.png', 'uploads/1779515541_0_Screenshot 2026-05-11 204050.png', 284240, '19', '2026-05-23 05:52:21', 'Pending', 'Projects', NULL, NULL, 'Project Plans & Timelines', '15', 15, '', '2026-05-23', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -228,18 +250,19 @@ CREATE TABLE `users` (
   `must_change_password` tinyint(1) NOT NULL DEFAULT 0,
   `fullname` varchar(150) DEFAULT NULL,
   `role` enum('admin','official') DEFAULT 'official',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `is_active` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `must_change_password`, `fullname`, `role`, `created_at`) VALUES
-(16, 'admin1', '$2y$10$07BhW8zDhaXqQTW8PjwlrO7xxUOzah/skhLQUx5KerkhwXHUeefFC', 0, 'Khem1', 'admin', '2025-10-14 16:06:04'),
-(17, 'Kagawad1', '$2y$10$A/XDT/Rekinmnsb6qn11IeWKd/4z2qeaNxTFM72muBABbFj2DtMmK', 0, 'Sam', 'official', '2025-10-19 03:28:03'),
-(19, 'jhon', '$2y$10$YVGiKTDQ3qn4TwcRvwjmvOYQ1.vE.mOX1yYE4j3DLmVtLPovIKE6q', 0, 'Jhon kien M. Magadan', 'official', '2026-01-28 10:29:32'),
-(20, 'Delacruz', '$2y$10$ko5tsWvp86/LlMzWJAz38OhOOfzt9.HoHYf5ue0Dw93WRwpzuKUMy', 0, 'Juan', 'official', '2026-04-29 12:54:56');
+INSERT INTO `users` (`id`, `username`, `password`, `must_change_password`, `fullname`, `role`, `created_at`, `is_active`) VALUES
+(16, 'admin1', '$2y$10$07BhW8zDhaXqQTW8PjwlrO7xxUOzah/skhLQUx5KerkhwXHUeefFC', 0, 'Khem1', 'admin', '2025-10-14 16:06:04', 1),
+(17, 'Kagawad1', '$2y$10$A/XDT/Rekinmnsb6qn11IeWKd/4z2qeaNxTFM72muBABbFj2DtMmK', 0, 'Sam', 'official', '2025-10-19 03:28:03', 0),
+(19, 'jhon', '$2y$10$YVGiKTDQ3qn4TwcRvwjmvOYQ1.vE.mOX1yYE4j3DLmVtLPovIKE6q', 0, 'Jhon kien M. Magadan', 'official', '2026-01-28 10:29:32', 1),
+(20, 'Delacruz', '$2y$10$ko5tsWvp86/LlMzWJAz38OhOOfzt9.HoHYf5ue0Dw93WRwpzuKUMy', 0, 'Juan', 'official', '2026-04-29 12:54:56', 0);
 
 --
 -- Indexes for dumped tables
@@ -309,7 +332,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activity_log`
 --
 ALTER TABLE `activity_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `documents`
@@ -327,7 +350,7 @@ ALTER TABLE `document_activity`
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `officials`
